@@ -1,0 +1,98 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "@typescript-eslint/eslint-plugin"
+    ],
+    "rules": {
+        "eqeqeq": "error",
+        "no-var": "error",
+        "no-unused-vars": [
+            "off"
+        ],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "args": "none"
+            }
+        ],
+        "@typescript-eslint/interface-name-prefix": [
+            "warn"
+        ],
+        "@typescript-eslint/no-empty-interface": [
+            "error",
+            {
+                "allowSingleExtends": true
+            }
+        ],
+        "react/prop-types": "off",
+        "brace-style": [
+            "warn",
+            "allman",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        "react/no-unescaped-entities": [
+            "error",
+            {
+                "forbid": [
+                    ">",
+                    "}"
+                ]
+            }
+        ],
+        "indent": [
+            "warn",
+            4,
+            {
+                "flatTernaryExpressions": false,
+                "SwitchCase": 1
+            }
+        ],
+        "quotes": [
+            "error",
+            "double",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "semi": "warn",
+        "prefer-const": "warn",
+        "no-trailing-spaces": "error",
+        "no-irregular-whitespace": "error",
+        "object-curly-spacing": [
+            "warn",
+            "always"
+        ],
+        "comma-spacing": "warn",
+        "space-in-parens": "warn",
+        "no-console": "warn",
+        "no-extra-semi": "error",
+        "no-empty-function": "error",
+        "no-multi-spaces": "warn"
+    },
+    "ignorePatterns": [
+        "public/**"
+    ]
+}
