@@ -3,10 +3,9 @@ import { useTransition, animated } from "react-spring";
 
 type OverlayProps = {
   open?: boolean;
-  onClick?: () => void;
 };
 
-const Overlay: React.FC<OverlayProps> = ({ open, onClick, children }) =>
+const Overlay: React.FC<OverlayProps> = ({ open, children }) =>
 {
   const transitions = useTransition(!open, null, {
     from: { opacity: 0, animationDuration: "300ms" },
@@ -15,7 +14,7 @@ const Overlay: React.FC<OverlayProps> = ({ open, onClick, children }) =>
   });
 
   return (
-    <div className="fixed z-10 inset-0 overflow-y-auto" onClick={onClick}>
+    <div className="fixed z-10 inset-0 overflow-y-auto">
       <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
       {transitions.map(({ item, props, key }) =>
         // <!--

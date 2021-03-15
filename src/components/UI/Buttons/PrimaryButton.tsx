@@ -1,9 +1,9 @@
 import React from "react";
 
-const PrimaryButton : React.FC<
+const PrimaryButton: React.FunctionComponent<
   React.ButtonHTMLAttributes<HTMLButtonElement>
-  > = ({ children, ...props }) => (
-  <button {...props}>{children}</button>
+> = ({ className, children, ...props }) => (
+  <button className={`${className}`} {...props}>{children}</button>
 );
 
 export default PrimaryButton;

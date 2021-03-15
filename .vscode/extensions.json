@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "ajhyndman.jslint",
+    "jpoissonnier.vscode-styled-components",
+    "graphql.vscode-graphql"
+  ]
+}

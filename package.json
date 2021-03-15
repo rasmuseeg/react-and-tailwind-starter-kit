@@ -1,9 +1,9 @@
 {
-  "name": "lima-webpack",
+  "name": "react-tailwind",
   "version": "1.0.0",
-  "description": "React SPA Client",
+  "description": "React Headless UI",
   "main": "index.js",
-  "author": "rasmus",
+  "author": "rasmuseeg",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js --mode development --history-fallback --history-api-fallback",

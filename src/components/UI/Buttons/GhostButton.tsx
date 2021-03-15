@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-const GhostButton : React.FC<
+const GhostButton: React.FunctionComponent<
   React.ButtonHTMLAttributes<HTMLButtonElement>
-  > = ({ children, className, ...props }) => (
-  <button className={`border border-transparent ${className}`} {...props}>{children}</button>
+> = ({ className, children, ...props }) => (
+  <button className={`border border-solid border-black text-black ${className}`} {...props}>{children}</button>
 );
 
 export default GhostButton;
